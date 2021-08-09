@@ -1,0 +1,46 @@
+POST http://localhost:3000/api/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMGVhNmMwOTgyZGVlMmEwNDQ1NTZkOCIsInVzZXJuYW1lIjoianVsZW5iZXJvIiwiaWF0IjoxNjI4MzYwNjM4LCJleHAiOjE2Mjg5NjU0Mzh9.ZQ-ufq-_IMcGkR_sl0gWslfXlwizCRlOT_vL_jfGcaI
+
+{
+    "eventName" : "Evento Prueba 2",
+	"location"  : "Bogota",
+	"datesEvent" : [{"date" : "2021-08-10T14:00:00", "price" : 50},{"date" : "2021-08-12T20:30:00", "price" : 60.75}],
+    "resume": "Evento Programado por Cadena Radial Pepito",
+	"image" : "http://lorempixel.com/640/480/fashion/",
+	"outstanding" : true
+}
+
+###
+POST http://localhost:3000/api/events
+Content-Type: application/json
+
+{
+    "eventName" : "Evento Prueba 2",
+	"location"  : "Bogota",
+	 "datesEvent" : [{"date" : "2021-08-10T14:00:00", "price" : 50},{"date" : "2021-08-12T20:30:00", "price" : 60.75}],
+    "resume": "Evento Programado por Cadena Radial Pepito",
+	"image" : "http://lorempixel.com/640/480/fashion/",
+	"outstanding" : true
+}
+
+###
+GET http://localhost:3000/api/events
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMTAyMjMwNGZiNWIyNmY4NDRiMzE0MyIsInVzZXJuYW1lIjoianVsZW5iZXJvIiwiaWF0IjoxNjI4NDQ3NDg4LCJleHAiOjE2MjkwNTIyODh9.5mkfKMlEcS_KLkCTVGvD_DyTusYEa9DU4cJB3dUxlkU
+
+###
+GET http://localhost:3000/api/events?pag=2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMTAyMjMwNGZiNWIyNmY4NDRiMzE0MyIsInVzZXJuYW1lIjoianVsZW5iZXJvIiwiaWF0IjoxNjI4NDQ3NDg4LCJleHAiOjE2MjkwNTIyODh9.5mkfKMlEcS_KLkCTVGvD_DyTusYEa9DU4cJB3dUxlkU
+
+###
+GET http://localhost:3000/api/events
+
+###
+GET http://localhost:3000/api/events/610cb8713463e63c7826d64c
+
+
+###
+GET http://localhost:3000/api/events/twitter/610cb54165d19e2e60f40520
+
