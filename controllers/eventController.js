@@ -91,12 +91,13 @@ server.put('/:id', async (req, res) => {
 	const { params } = req;
 	const { id } = params;
 	const event = req.body;
-	const { eventName, location, resume, image } = event;
+	const { eventName, location, resume, image, outstanding } = event;
 	const updateEvent = {
 		eventName,
 		location,
 		resume,
-		image
+		image,
+		outstanding
 	};
 	try {
 		const findEvent = await Event.findByIdAndUpdate(id, updateEvent);
