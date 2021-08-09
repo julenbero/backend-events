@@ -26,7 +26,7 @@ https://julenbero-backend-events.herokuapp.com/
     GET api/events?pag=1
 ```
 
-- Devuelve la información de un evento especifico buscado por id
+- Devuelve el detalle de un evento especifico buscado por id
 
 ```rest
     GET api/events/:id
@@ -101,7 +101,7 @@ Parametros que deben ser enviados para la creacion del usuario:
 ```rest
     POST api/login
 ```
-Parametros que deben ser enviados para la creacion del usuario:
+Parametros que deben ser enviados para loguear un usuario:
 
 ```json
     {
