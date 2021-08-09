@@ -22,8 +22,9 @@ app.use(notFound);
 app.use(handleErrors);
 
 const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || '0.0.0.0';
 
-const server = app.listen(PORT, () => {
+const server = app.listen(PORT, HOST, () => {
 	console.log(`Server started on port ${PORT}`);
 });
 
