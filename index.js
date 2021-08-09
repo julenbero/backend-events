@@ -14,7 +14,11 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-	res.send('<h1>Hello World</h1>');
+	const link = req.protocol + '://' + req.get('host') + req.originalUrl + 'api/events';
+	const message = `<h1>Hello Eventos</h1>
+	<p>Para validar eventos necesitas ir a la siguiente ruta
+	<a href=${link}>${link}</a></p>`;
+	res.send(message);
 });
 
 app.use('/api', routes);
