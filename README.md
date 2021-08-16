@@ -7,6 +7,16 @@ https://github.com/ingenious-agency/backend-test/tree/master/instructions#requer
 
 https://julenbero-backend-events.herokuapp.com/
 
+## Notas Importantes antes de empezar
+
+Antes de inicializar el proyecto se recomienda que en la carpeta principal del proyecto vas a tener que crear un archivo llamado: `.env` que tenga la siguiente estructura:
+
+```
+MONGO_DB_URI= url de acceso a cluster o bd local
+SECRET= Frase secreta
+HOST= Host a usar (Localhost)
+```
+
 ## Stack de dependencias principal usado
 
 - express
@@ -62,7 +72,7 @@ Parametros que deben ser enviados para la creacion del evento:
     DELETE api/events/:id
 ```
 
-- Actualiza un vehiculo solo con algunos datos enviados por el body segun id
+- Actualiza un evento solo con algunos datos enviados por el body segun id
 
 ```rest
     PUT api/events/:id
@@ -96,7 +106,7 @@ Parametros que deben ser enviados para la creacion del usuario:
 
 ### **Login Usuario**
 
-- Agrega un usuario  
+- Loguear un usuario  
 
 ```rest
     POST api/login
